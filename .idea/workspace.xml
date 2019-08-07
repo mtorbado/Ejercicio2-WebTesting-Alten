@@ -2,23 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1f67b3-ade1-4f10-9a86-3da8a0f3faae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/page/RenfeResultsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/15461f14150ad75f7c3e2148d55b1d9078a32828536fa0737a78b002f2841af2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1c47b651397e08899348b1d24e82233fb6039477d24b8d46992ac2e01de176f5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/407b75aae756333139813f214fafd966597bc07db66dd837ba43069b09af9535.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/50d54fca99d792c636a149540c104239ecab4ddf4c92d0d892f1e651a3134be1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/52a75ab8ca7cc437721f30efde1bc8b54b9a2ce8774dafe05d2912c1ca50ce92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/532902523866ea6f9ed95d2444dd888aa235ebf48482534a8aaedeefefb410bf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/5cc74d3bf1085a0e8f6814ba47566628c8209b9500fe69e9ec8749382d471f85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/5ef175643c15e18d8ca47dca48ee10291afa0627c97471e13702a74f77e74278.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/69efb91eab4c961ae342cee50bb5d283ebab348771d441dfba7dcf60ce393d2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9f80f092d34f14072f74dad0f4ac74a5facf8de0888d88ca340587a1688beefe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b1ebfa10ae8b86b364c29830f2feb60b3baffb2bb2cc5bc45ee8589f4504920d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b58506bd4edde8ec52a2ca637fced09d948f5fda71ec9097267faac40ee65faf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f1ad31f282f03647ffa1b43fe868e583a66974254bfd0d1d1e377c46a4b4bf91.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource10302799473905965394.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource10507116823395374722.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource106425701328184488.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource11893025012718865796.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource12075805445911588794.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource12242029368421200628.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource13189036162350782379.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource16010591765112660354.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource16055100416424826245.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource18163919408419189571.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource18341267001338869779.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource2376040528414101808.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource2413975526702589794.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource2770778222652840247.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource46594329411013415.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource4713321370323170846.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource4910348981355185820.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource5260902876429201906.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource5638489035106440317.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource5897795969025581319.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource7188503075640131061.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource7601503803616972162.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource8635515000657691543.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource8981596437782359241.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource9185548175502434838.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource9505896473567828771.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource9873353203343025710.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource9914886382720756994.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_15461f14150ad75f7c3e2148d55b1d9078a32828536fa0737a78b002f2841af2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1c47b651397e08899348b1d24e82233fb6039477d24b8d46992ac2e01de176f5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_407b75aae756333139813f214fafd966597bc07db66dd837ba43069b09af9535.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_50d54fca99d792c636a149540c104239ecab4ddf4c92d0d892f1e651a3134be1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_52a75ab8ca7cc437721f30efde1bc8b54b9a2ce8774dafe05d2912c1ca50ce92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_532902523866ea6f9ed95d2444dd888aa235ebf48482534a8aaedeefefb410bf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_5cc74d3bf1085a0e8f6814ba47566628c8209b9500fe69e9ec8749382d471f85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_5ef175643c15e18d8ca47dca48ee10291afa0627c97471e13702a74f77e74278.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_69efb91eab4c961ae342cee50bb5d283ebab348771d441dfba7dcf60ce393d2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9f80f092d34f14072f74dad0f4ac74a5facf8de0888d88ca340587a1688beefe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b1ebfa10ae8b86b364c29830f2feb60b3baffb2bb2cc5bc45ee8589f4504920d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b58506bd4edde8ec52a2ca637fced09d948f5fda71ec9097267faac40ee65faf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f1ad31f282f03647ffa1b43fe868e583a66974254bfd0d1d1e377c46a4b4bf91.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/serenitySteps/RenfeSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/serenitySteps/RenfeSearchSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/stepDefinitions/RenfeSearchStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/stepDefinitions/RenfeSearchStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testRunner/RenfeTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testRunner/RenfeTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/renfeSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/renfeSearch.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/page/RenfeResultsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/page/RenfeResultsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/page/RenfeSearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/page/RenfeSearchPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Renfe#20booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/Renfe#20booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.testRunner.RenfeTestRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.testRunner.RenfeTestRunner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.testRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.testRunner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Renfe#20booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-Renfe#20booking.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.testRunner.RenfeTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.testRunner.RenfeTestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/page/RenfeResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/page/RenfeResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-0ead36dda9f484fe32720fd33e66f468c7f17dd5e30d469065ffae861d068e17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +125,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/stepDefinitions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -144,7 +213,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -30,9 +30,9 @@ public class RenfeSearchPage extends PageObject {
     private WebElementFacade destinationInput;
 
     // ORIGIN/DESTINATION SELECTIONS
-    @FindBy(xpath = "//[@id='ui-id-1']")
+    @FindBy(xpath = "//*[@id='ui-id-1']")
     private WebElementFacade originSelection;
-    @FindBy(xpath = "//[@id='ui-id-2']")
+    @FindBy(xpath = "//*[@id='ui-id-2']")
     private WebElementFacade destinationSelection;
 
     // DEPARTURE/RETURN DATES INPUT FIELDS
@@ -72,10 +72,16 @@ public class RenfeSearchPage extends PageObject {
 
     public void selectOrigin(String station) {
         originInput.type(station);
+        // originSelection.waitUntilEnabled();
+        // originSelection.waitUntilVisible();
+        // originSelection.waitUntilClickable();
         originSelection.click();
     }
     public void selectDestination(String station) {
         destinationInput.type(station);
+        // destinationSelection.waitUntilEnabled();
+        // destinationSelection.waitUntilVisible();
+        // destinationSelection.waitUntilClickable();
         destinationSelection.click();
     }
 
