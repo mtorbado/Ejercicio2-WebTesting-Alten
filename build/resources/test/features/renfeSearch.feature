@@ -1,6 +1,6 @@
 Feature: Renfe booking
 
-  Scenario Outline:
+  Scenario Outline: Search for a trip
     Given I want to search train tickets
     When I select origin "<originStation>"
     And I select destination "<destinationStation>"

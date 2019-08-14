@@ -1,5 +1,6 @@
 package com.page;
 
+import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
@@ -8,6 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,11 +17,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 @DefaultUrl("http://www.renfe.com/")
 public class RenfeSearchPage extends PageObject {
 
-    private JavascriptExecutor js = (JavascriptExecutor) this.getDriver();
+    //private JavascriptExecutor js = (JavascriptExecutor) this.getDriver();
 
     // ATTRIBUTES
     @CacheLookup
@@ -30,9 +33,11 @@ public class RenfeSearchPage extends PageObject {
     private WebElementFacade destinationInput;
 
     // ORIGIN/DESTINATION SELECTIONS
-    @FindBy(xpath = "//*[@id='ui-id-1']")
+    //@FindBy(xpath = "//*[@id='ui-id-1']")
+    @FindBy(id = "ui-id-1")
     private WebElementFacade originSelection;
-    @FindBy(xpath = "//*[@id='ui-id-2']")
+    //@FindBy(xpath = "//*[@id='ui-id-2']")
+    @FindBy(id = "ui-id-2")
     private WebElementFacade destinationSelection;
 
     // DEPARTURE/RETURN DATES INPUT FIELDS
@@ -72,17 +77,22 @@ public class RenfeSearchPage extends PageObject {
 
     public void selectOrigin(String station) {
         originInput.type(station);
-        // originSelection.waitUntilEnabled();
-        // originSelection.waitUntilVisible();
-        // originSelection.waitUntilClickable();
-        originSelection.click();
+        selectStation(station, originSelection);
     }
+
     public void selectDestination(String station) {
         destinationInput.type(station);
-        // destinationSelection.waitUntilEnabled();
-        // destinationSelection.waitUntilVisible();
-        // destinationSelection.waitUntilClickable();
-        destinationSelection.click();
+        selectStation(station, destinationSelection);
+    }
+
+    public void selectStation(String station, WebElementFacade stationInput) {
+        List<WebElement> stationsWEList = stationInput.findElements(By.tagName("li"));
+        for (int i = 0; i < stationsWEList.size(); i++) {
+            if(stationsWEList.get(i).getText().equals(station)){
+                stationsWEList.get(i).click();
+            }
+        }
+
     }
 
     public void selectDepartureDate(int daysAfterToday) {
@@ -98,7 +108,7 @@ public class RenfeSearchPage extends PageObject {
     }
 
     public void selectReturnDate(int daysAfterDeparture){
-        Assert.assertNotNull(departureDay);
+        Assert.assertNotNull("departure date is null", departureDay);
 
         departureDay.add(Calendar.DATE, daysAfterDeparture);
         SimpleDateFormat f = new SimpleDateFormat(datePattern);

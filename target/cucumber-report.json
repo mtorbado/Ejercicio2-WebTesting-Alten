@@ -4,15 +4,15 @@
     "elements": [
       {
         "line": 17,
-        "name": "",
+        "name": "Search for a trip",
         "description": "",
-        "id": "renfe-booking;;;2",
+        "id": "renfe-booking;search-for-a-trip;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13399514100,
+              "duration": 13177809000,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 762121200,
+              "duration": 839834400,
               "status": "passed"
             },
             "line": 5,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 828550600,
+              "duration": 808807700,
               "status": "passed"
             },
             "line": 6,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 355779700,
+              "duration": 440770100,
               "status": "passed"
             },
             "line": 7,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 453111900,
+              "duration": 469621900,
               "status": "passed"
             },
             "line": 8,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 634043000,
+              "duration": 694350900,
               "status": "passed"
             },
             "line": 9,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 2896270700,
+              "duration": 2802125900,
               "status": "passed"
             },
             "line": 12,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 3015735900,
+              "duration": 13361700,
               "status": "passed"
             },
             "line": 13,
@@ -150,15 +150,15 @@
       },
       {
         "line": 18,
-        "name": "",
+        "name": "Search for a trip",
         "description": "",
-        "id": "renfe-booking;;;3",
+        "id": "renfe-booking;search-for-a-trip;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1499608500,
+              "duration": 1776875900,
               "status": "passed"
             },
             "line": 4,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 918205300,
+              "duration": 1132205000,
               "status": "passed"
             },
             "line": 5,
@@ -188,7 +188,7 @@
           },
           {
             "result": {
-              "duration": 765129600,
+              "duration": 1005654000,
               "status": "passed"
             },
             "line": 6,
@@ -206,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 407240400,
+              "duration": 379354500,
               "status": "passed"
             },
             "line": 7,
@@ -224,7 +224,7 @@
           },
           {
             "result": {
-              "duration": 377494100,
+              "duration": 445990800,
               "status": "passed"
             },
             "line": 8,
@@ -242,7 +242,7 @@
           },
           {
             "result": {
-              "duration": 586875500,
+              "duration": 634012000,
               "status": "passed"
             },
             "line": 9,
@@ -270,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 2546850600,
+              "duration": 2458736000,
               "status": "passed"
             },
             "line": 12,
@@ -282,7 +282,7 @@
           },
           {
             "result": {
-              "duration": 3022134600,
+              "duration": 11973400,
               "status": "passed"
             },
             "line": 13,

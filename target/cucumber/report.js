@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "",
+  "name": "Search for a trip",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -83,7 +83,7 @@ formatter.examples({
   ]
 });
 formatter.scenario({
-  "name": "",
+  "name": "Search for a trip",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -184,7 +184,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "",
+  "name": "Search for a trip",
   "description": "",
   "keyword": "Scenario Outline"
 });
