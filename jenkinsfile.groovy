@@ -8,23 +8,21 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'gradlew.bat clean build'
+                sh 'chmod u+x src/test/resources/webdrivers/chrome/chromedriver.exe'
+                sh './gradlew clean build'
             }
         }
     }
-    post {
-        always {
-            publishHTML(target: [
-                    reportName : 'Serenity',
-                    reportDir:   'target/site/serenity',
-                    reportFiles: 'index.html',
-                    keepAll:     true,
-                    alwaysLinkToLastBuild: true,
-                    allowMissing: false
-            ])
-        }
-        failure {
-
-        }
-    }
+    // post {
+    //     always {
+    //         publishHTML(target: [
+    //                 reportName : 'Serenity',
+    //                 reportDir:   'target/site/serenity',
+    //                 reportFiles: 'index.html',
+    //                 keepAll:     true,
+    //                 alwaysLinkToLastBuild: true,
+    //                 allowMissing: false
+    //         ])
+    //     }
+    // }
 }

@@ -49,6 +49,10 @@ dependencies {
 gradle.startParameter.continueOnFailure = true // Allow build to continue on test failure
 
 test {
+    browser = System.getenv('browser')
+    node = System.getenv('node')
+    println "$System.env.BROWSER"
+    println "$System.env.NODE"
     systemProperties System.getProperties()
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
