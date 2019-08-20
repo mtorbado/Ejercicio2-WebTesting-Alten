@@ -1,17 +1,18 @@
 pipeline {
     agent any
+
     stages {
         stage('Checkout') {
-            steps {
-                git url: 'https://github.com/zombivoro/Ejercicio2-WebTesting-Alten', branch: 'master'
-            }
+        steps {
+            git url: 'https://github.com/zombivoro/Ejercicio2-WebTesting-Alten', branch: 'master'
         }
-        stage('Test') {
-            steps {
-                sh 'chmod u+x src/test/resources/webdrivers/chrome/chromedriver.exe'
-                sh './gradlew clean build'
-            }
+    }
+    stage('Test') {
+        steps {
+            sh 'chmod u+x src/test/resources/webdrivers/chrome/chromedriver.exe'
+            sh './gradlew clean build'
         }
+    }
     }
     // post {
     //     always {

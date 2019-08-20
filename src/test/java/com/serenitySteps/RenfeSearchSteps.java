@@ -2,7 +2,6 @@ package com.serenitySteps;
 import com.page.RenfeResultsPage;
 import com.page.RenfeSearchPage;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 

@@ -49,13 +49,23 @@ dependencies {
 gradle.startParameter.continueOnFailure = true // Allow build to continue on test failure
 
 test {
-    println System.getenv('BROWSER')
-    println System.getenv('NODE')
-//    System.getProperty('browser')
-//    System.getProperty('node')
-//    println "Browser is ${systemProperties.browser}"
-//    println "Node is ${systemProperties.node}"
     systemProperties System.getProperties()
+    testLogging.showStandardStreams = true
+    include "com/testRunner/RenfeTestRunner.class"
+}
+
+task firefox(type: Test) {
+    systemProperties System.getProperties()
+    systemProperties['context'] = 'firefox'
+    systemProperties['webdriver.driver'] = 'firefox'
+    testLogging.showStandardStreams = true
+    include"com/testRunner/RenfeTestRunner.class"
+}
+
+task chrome(type: Test) {
+    systemProperties System.getProperties()
+    systemProperties['context'] = 'chrome'
+    systemProperties['webdriver.driver'] = 'chrome'
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
 }

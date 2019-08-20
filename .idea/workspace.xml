@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1f67b3-ade1-4f10-9a86-3da8a0f3faae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/webdrivers.edge/msedgedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/webdrivers.firefox/geckodriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/webdrivers.firefox/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkinsfile.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfile.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/serenitySteps/RenfeSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/serenitySteps/RenfeSearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testRunner/RenfeTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testRunner/RenfeTestRunner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +55,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mario.torbado\IdeaProjects\formacion\ejercicio 2 - Renfe\src\test\resources\webdrivers.firefox" />
+      <recent name="C:\Users\mario.torbado\IdeaProjects\formacion\ejercicio 2 - Renfe\src\test\resources\webdrivers.edge" />
       <recent name="C:\Users\mario.torbado\IdeaProjects\formacion\ejercicio 2 - Renfe" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
