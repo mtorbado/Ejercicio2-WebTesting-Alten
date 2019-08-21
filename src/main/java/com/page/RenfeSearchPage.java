@@ -6,14 +6,15 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.WhenPageOpens;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -68,7 +69,7 @@ public class RenfeSearchPage extends PageObject {
         currentDate = new Date();
     }
 
-    private void maximizeWindow(WebDriver driver){
+    private void maximizeWindow(WebDriver driver) {
         driver.manage().window().maximize();
     }
 
@@ -107,7 +108,7 @@ public class RenfeSearchPage extends PageObject {
         departureDateInput.type(departureDate);
     }
 
-    public void selectReturnDate(int daysAfterDeparture){
+    public void selectReturnDate(int daysAfterDeparture) {
         Assert.assertNotNull("departure date is null", departureDay);
 
         departureDay.add(Calendar.DATE, daysAfterDeparture);

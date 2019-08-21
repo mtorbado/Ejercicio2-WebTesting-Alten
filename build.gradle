@@ -55,10 +55,14 @@ test {
 }
 
 task firefox(type: Test) {
+
+    ant.propertyfile(file: "serenity.properties") {
+        entry(key: "propertyName", value: "propertyValue")
+    }
+
     systemProperties System.getProperties()
     systemProperties['context'] = 'firefox'
     systemProperties['webdriver.driver'] = 'firefox'
-    println "NODE: " + System.getenv('NODE')
 
     testLogging.showStandardStreams = true
     include"com/testRunner/RenfeTestRunner.class"
@@ -68,7 +72,6 @@ task chrome(type: Test) {
     systemProperties System.getProperties()
     systemProperties['context'] = 'chrome'
     systemProperties['webdriver.driver'] = 'chrome'
-    println "NODE: " + System.getenv('NODE')
 
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
