@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Renfe booking" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-08-08T07:59:52" hostname="SG-3012" time="30.961">
+<testsuite name="Renfe booking" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-08-21T08:23:12" hostname="SG-3012" time="59.866">
   <properties/>
-  <testcase name="Search for a trip" classname="Renfe booking" time="19.316"/>
-  <testcase name="Search for a trip" classname="Renfe booking" time="11.631"/>
+  <testcase name="Search for a trip" classname="Renfe booking" time="37.974"/>
+  <testcase name="Search for a trip" classname="Renfe booking" time="21.863"/>
   <system-out><![CDATA[    ?[32mGiven ?[0m?[32mI want to search train tickets?[0m                                      ?[90m# RenfeSearchStepDefinitions.iWantToSearchTrainTickets()?[0m
     ?[32mWhen ?[0m?[32mI select origin "?[0m?[32m?[1mVALLADOLID?[0m?[32m"?[0m                                         ?[90m# RenfeSearchStepDefinitions.iSelectOrigin(String)?[0m
     ?[32mAnd ?[0m?[32mI select destination "?[0m?[32m?[1mMADRID-CHAMARTIN?[0m?[32m"?[0m                               ?[90m# RenfeSearchStepDefinitions.iSelectDestination(String)?[0m
@@ -20,14 +20,10 @@
     ?[32mAnd ?[0m?[32mI press 'comprar' button?[0m                                              ?[90m# RenfeSearchStepDefinitions.iPressComprarButton()?[0m
     ?[32mThen ?[0m?[32mthe result page is shown?[0m                                             ?[90m# RenfeSearchStepDefinitions.theResultPageIsShown()?[0m
 ]]></system-out>
-  <system-err><![CDATA[ago. 08, 2019 9:59:53 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[ago. 21, 2019 10:23:13 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 33550
-Only local connections are allowed.
-[1565251197.759][WARNING]: Timed out connecting to Chrome, retrying...
-ago. 08, 2019 9:59:59 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: OSS
-[1565251201.833][WARNING]: Timed out connecting to Chrome, retrying...
+ago. 21, 2019 10:23:27 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
