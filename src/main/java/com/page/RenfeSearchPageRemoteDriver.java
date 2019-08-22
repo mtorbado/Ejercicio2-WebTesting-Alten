@@ -57,12 +57,14 @@ public class RenfeSearchPageRemoteDriver {
     @FindBy(xpath = "//*[@id=\"datosBusqueda\"]/button")
     private WebElementFacade buyButton;
 
+
+    private WebDriver driver = null;
     private Date currentDate;
     private String datePattern = "dd/MM/yyyy";
     private Calendar departureDay;
 
     public RenfeSearchPageRemoteDriver() throws MalformedURLException {
-        WebDriver driver;
+
         String baseUrl = "http://www.renfe.com/";
         String nodeUrl = "http://10.0.75.1:4444/wd/hub";
         DesiredCapabilities capability = null;
@@ -88,16 +90,17 @@ public class RenfeSearchPageRemoteDriver {
     public void waitOpen() { }
 
     public void selectOrigin(String station) {
-        originInput.type(station);
-        selectStation(station, originSelection);
+        driver.findElement(By.id("IdOrigen")).sendKeys(station);
+        selectStation(station, driver.findElement(By.id("ui-id-1")));
     }
 
     public void selectDestination(String station) {
         destinationInput.type(station);
-        selectStation(station, destinationSelection);
+        driver.findElement(By.id("IdDestino")).sendKeys(station);
+        selectStation(station, driver.findElement(By.id("ui-id-2")));
     }
 
-    public void selectStation(String station, WebElementFacade stationInput) {
+    public void selectStation(String station, WebElement stationInput) {
         List<WebElement> stationsWEList = stationInput.findElements(By.tagName("li"));
         for (int i = 0; i < stationsWEList.size(); i++) {
             if(stationsWEList.get(i).getText().equals(station)){
