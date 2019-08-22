@@ -137,6 +137,11 @@ public class RenfeSearchPageRemoteDriver {
     }
 
     public void purchase() {
+        try {
+            driver.wait(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         driver.findElement(By.xpath("//*[@id=\"datosBusqueda\"]/button")).click();
     }
 }
