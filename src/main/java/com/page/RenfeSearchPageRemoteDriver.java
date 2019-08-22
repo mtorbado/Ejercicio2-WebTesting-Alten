@@ -64,7 +64,7 @@ public class RenfeSearchPageRemoteDriver {
     public RenfeSearchPageRemoteDriver() throws MalformedURLException {
         WebDriver driver;
         String baseUrl = "http://www.renfe.com/";
-        String nodeUrl = "http://10.0.75.1";
+        String nodeUrl = "http://10.0.75.1:4444/wd/hub";
         DesiredCapabilities capability = null;
 
         if (System.getenv("BROWSER").equals("chrome")) {
@@ -83,7 +83,7 @@ public class RenfeSearchPageRemoteDriver {
         driver.manage().window().maximize();
         currentDate = new Date();
     }
-    
+
     @WhenPageOpens
     public void waitOpen() { }
 
