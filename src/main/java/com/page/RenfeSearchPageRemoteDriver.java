@@ -118,6 +118,7 @@ public class RenfeSearchPageRemoteDriver {
 
         SimpleDateFormat f = new SimpleDateFormat(datePattern);
         String departureDate = f.format(day.getTime());
+        driver.findElement(By.id("__fechaIdaVisual")).clear();
         driver.findElement(By.id("__fechaIdaVisual")).sendKeys(departureDate);
     }
 
@@ -131,8 +132,11 @@ public class RenfeSearchPageRemoteDriver {
     }
 
     public void selectPassengers(int adults, int children, int childrenUnder4) {
+        driver.findElement(By.id("__numAdultos")).clear();
         driver.findElement(By.id("__numAdultos")).sendKeys(Integer.toString(adults));
+        driver.findElement(By.id("__numNinos")).clear();
         driver.findElement(By.id("__numNinos")).sendKeys(Integer.toString(children));
+        driver.findElement(By.id("__numBebe")).clear();
         driver.findElement(By.id("__numBebe")).sendKeys(Integer.toString(childrenUnder4));
     }
 
