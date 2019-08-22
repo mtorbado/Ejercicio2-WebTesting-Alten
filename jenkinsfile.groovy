@@ -17,7 +17,7 @@ pipeline {
                 // browser is selected here, 'chrome' or 'firefox' gradle tasks.
                 // 'test' is used for parameterized execution: set BROWSER and NODE enviroment variables and use
                 // RenfeSearchPageRemoteDriver instead
-                sh './gradlew chrome'
+                sh './gradlew test'
             }
         }
     }
