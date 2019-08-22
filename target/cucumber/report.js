@@ -95,7 +95,8 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iWantToSearchTrainTickets()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat com.page.RenfeSearchPageRemoteDriver.\u003cinit\u003e(RenfeSearchPageRemoteDriver.java:70)\r\n\tat com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(\u003cgenerated\u003e)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)\r\n\tat net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)\r\n\tat net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(\u003cgenerated\u003e)\r\n\tat com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)\r\n\tat ✽.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I select origin \"VALLADOLID\"",
@@ -105,7 +106,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iSelectOrigin(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I select destination \"MADRID-CHAMARTIN\"",
@@ -115,7 +116,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iSelectDestination(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "departure date is 1 days after today",
@@ -125,7 +126,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.departureDateIsDaysAfterToday(int)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "return date is 2 days after departure date",
@@ -135,7 +136,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.comebackDateIsDaysAfterDepartureDate(int)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I select the following adults \u0026 children \u0026 children under 4 years old",
@@ -161,7 +162,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iSelectTheFolowingAdultsChildrenChildrenUnder4YearsOld(DataTable)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I press \u0027comprar\u0027 button",
@@ -171,7 +172,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iPressComprarButton()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "the result page is shown",
@@ -181,7 +182,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.theResultPageIsShown()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Search for a trip",
@@ -196,7 +197,8 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iWantToSearchTrainTickets()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat com.page.RenfeSearchPageRemoteDriver.\u003cinit\u003e(RenfeSearchPageRemoteDriver.java:70)\r\n\tat com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(\u003cgenerated\u003e)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)\r\n\tat net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)\r\n\tat net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(\u003cgenerated\u003e)\r\n\tat com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)\r\n\tat ✽.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I select origin \"MADRID-PUERTA DE ATOCHA\"",
@@ -206,7 +208,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iSelectOrigin(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I select destination \"BARCELONA-SANTS\"",
@@ -216,7 +218,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iSelectDestination(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "departure date is 1 days after today",
@@ -226,7 +228,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.departureDateIsDaysAfterToday(int)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "return date is 2 days after departure date",
@@ -236,7 +238,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.comebackDateIsDaysAfterDepartureDate(int)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I select the following adults \u0026 children \u0026 children under 4 years old",
@@ -262,7 +264,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iSelectTheFolowingAdultsChildrenChildrenUnder4YearsOld(DataTable)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I press \u0027comprar\u0027 button",
@@ -272,7 +274,7 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.iPressComprarButton()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "the result page is shown",
@@ -282,6 +284,6 @@ formatter.match({
   "location": "RenfeSearchStepDefinitions.theResultPageIsShown()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 });

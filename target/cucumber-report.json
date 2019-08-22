@@ -12,8 +12,9 @@
         "steps": [
           {
             "result": {
-              "duration": 26661172600,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat com.page.RenfeSearchPageRemoteDriver.\u003cinit\u003e(RenfeSearchPageRemoteDriver.java:70)\r\n\tat com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(\u003cgenerated\u003e)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)\r\n\tat net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)\r\n\tat net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(\u003cgenerated\u003e)\r\n\tat com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)\r\n\tat ✽.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)\r\n",
+              "duration": 1618988600,
+              "status": "failed"
             },
             "line": 4,
             "name": "I want to search train tickets",
@@ -24,8 +25,7 @@
           },
           {
             "result": {
-              "duration": 1487538500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "I select origin \"VALLADOLID\"",
@@ -42,8 +42,7 @@
           },
           {
             "result": {
-              "duration": 1108723500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "I select destination \"MADRID-CHAMARTIN\"",
@@ -60,8 +59,7 @@
           },
           {
             "result": {
-              "duration": 624520900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "departure date is 1 days after today",
@@ -78,8 +76,7 @@
           },
           {
             "result": {
-              "duration": 707246300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "return date is 2 days after departure date",
@@ -96,8 +93,7 @@
           },
           {
             "result": {
-              "duration": 1171384500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "I select the following adults \u0026 children \u0026 children under 4 years old",
@@ -124,8 +120,7 @@
           },
           {
             "result": {
-              "duration": 4805936900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "I press \u0027comprar\u0027 button",
@@ -136,8 +131,7 @@
           },
           {
             "result": {
-              "duration": 1277288800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "the result page is shown",
@@ -158,8 +152,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4022952200,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat com.page.RenfeSearchPageRemoteDriver.\u003cinit\u003e(RenfeSearchPageRemoteDriver.java:70)\r\n\tat com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(\u003cgenerated\u003e)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)\r\n\tat net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)\r\n\tat net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)\r\n\tat com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(\u003cgenerated\u003e)\r\n\tat com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)\r\n\tat ✽.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)\r\n",
+              "duration": 23803800,
+              "status": "failed"
             },
             "line": 4,
             "name": "I want to search train tickets",
@@ -170,8 +165,7 @@
           },
           {
             "result": {
-              "duration": 1880411000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "I select origin \"MADRID-PUERTA DE ATOCHA\"",
@@ -188,8 +182,7 @@
           },
           {
             "result": {
-              "duration": 1472733100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "I select destination \"BARCELONA-SANTS\"",
@@ -206,8 +199,7 @@
           },
           {
             "result": {
-              "duration": 603574500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "departure date is 1 days after today",
@@ -224,8 +216,7 @@
           },
           {
             "result": {
-              "duration": 599415100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "return date is 2 days after departure date",
@@ -242,8 +233,7 @@
           },
           {
             "result": {
-              "duration": 1002711400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "I select the following adults \u0026 children \u0026 children under 4 years old",
@@ -270,8 +260,7 @@
           },
           {
             "result": {
-              "duration": 3396341200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "I press \u0027comprar\u0027 button",
@@ -282,8 +271,7 @@
           },
           {
             "result": {
-              "duration": 17703100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "the result page is shown",

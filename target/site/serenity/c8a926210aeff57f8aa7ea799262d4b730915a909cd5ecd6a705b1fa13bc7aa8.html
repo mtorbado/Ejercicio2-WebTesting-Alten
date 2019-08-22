@@ -53,7 +53,7 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -61,7 +61,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors',  0],
+                ['Errors',  1],
                 ['Compromised',  0]
             ]
         ], {
@@ -92,18 +92,18 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '2 / 2 tests passed' },
+                {label: '0 / 2 tests passed' },
                 {label: '0 / 2 tests pending'},
                 {label: '0 / 2 tests not executed'},
                 {label: '0 / 2 tests failed'},
-                {label: '0 / 2 errors'},
+                {label: '2 / 2 errors'},
                 {label: '0 / 2 compromised tests'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -111,7 +111,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors', 0],
+                ['Errors', 1],
                 ['Compromised', 0],
             ]
         ], {
@@ -143,11 +143,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '2 / 2 tests passed (1% of all test steps)' },
+                {label: '0 / 2 tests passed (0% of all test steps)' },
                 {label: '0 / 2 tests pending'},
                 {label: '0 / 2 tests not executed'},
                 {label: '0 / 2 tests failed (0% of all test steps)'},
-                {label: '0 / 2 errors (0% of all test steps)'}
+                {label: '2 / 2 errors (1% of all test steps)'}
             ]
         });
 
@@ -194,8 +194,7 @@
 <div id="contenttop">
     <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                > Feature 
-                > <span class="truncate-60">Renfe Booking (Passing Tests)</span>
+                > <span class="truncate-60">Tests With Errors</span>
         </span>
     </div>
     <div class="rightbg"></div>
@@ -216,7 +215,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-08-2019 10:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-08-2019 12:22</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -225,7 +224,7 @@
 <div class="middlb">
 <div class="table">
 
-<h2><i class='fa fa-tags'></i> Feature: Renfe Booking (Passing Tests)</h2>
+<h2>Tests With Errors</h2>
 <table class='overview'>
     <tr>
         <td width="375px" valign="top">
@@ -237,15 +236,23 @@
 
                     <span class="test-count"> |
                         1
-passed
+unsuccessful
+                    </span>(
+                    <span class="test-count">
+                        0
+failed,
                     </span>
+                    <span class="test-count">
+                        1
+errors
+                    </span>)
 
                 
 
 
 
                  |
-                    <a href="0811ea416d555fdb53d17ecda220bfd40ec18e6aa35a66a8fb520d29fc111b45.csv" title="Download CSV"> <i class="fa fa-download" title="Download CSV"></i></a>
+                    <a href="c8a926210aeff57f8aa7ea799262d4b730915a909cd5ecd6a705b1fa13bc7aa8.csv" title="Download CSV"> <i class="fa fa-download" title="Download CSV"></i></a>
                 </div>
             </div>
 
@@ -290,8 +297,8 @@ passed
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
-            <td>2 (100%)</td>
             <td>0 (0%)</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -306,14 +313,14 @@ passed
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
-            <td>2 (100%)</td>
             <td>0 (0%)</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 0 seconds</td>
+                <td colspan="5">9 seconds</td>
         </tr>
         </body>
     </table>
@@ -335,8 +342,8 @@ passed
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="SUCCESS-text truncated-tag-title">
-                                <a href="5f913d061f10a9dd6e5bca50900013172a959c9b82a12c540913e8fc9594d6cb.html" title="Renfe Booking">Renfe Booking</a>
+                        <span class="ERROR-text truncated-tag-title">
+                                <a href="0d4a644ee2e94733f140082a342ff1bc2a4d611d580c42d9efcba889177a13da.html" title="Renfe Booking">Renfe Booking</a>
                         </span>
                     </td>
                     <td width="220px" class="table-figure">
@@ -344,9 +351,9 @@ passed
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="2 out of 2 tests (18 steps) passing">100%</span></td>
+                                <td class="related-tag-percentage"><span title="0 out of 2 tests (0 steps) passing">0%</span></td>
                                 <td width="150px">
-                                    <a href="5f913d061f10a9dd6e5bca50900013172a959c9b82a12c540913e8fc9594d6cb.html">
+                                    <a href="0d4a644ee2e94733f140082a342ff1bc2a4d611d580c42d9efcba889177a13da.html">
                                         <div class="pendingbar"
                                              title="0 out of 2 tests (0 steps) pending"
                                              style="width: 150px;">
@@ -358,13 +365,13 @@ passed
                                                      title="0 out of 2 tests (0 steps) compromised">
                                                     <div class="errorbar"
                                                          style="width: 150px;"
-                                                         title="0 out of 2 tests (0 steps) broken">
+                                                         title="2 out of 2 tests (20 steps) broken">
                                                         <div class="failingbar"
-                                                             style="width: 150px;"
+                                                             style="width: 0px;"
                                                              title="0 out of 2 tests (0 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 150px;"
-                                                                 title="2 out of 2 tests (18 steps) passing">
+                                                                 style="width: 0px;"
+                                                                 title="0 out of 2 tests (0 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -388,7 +395,7 @@ passed
                     <table>
                         <tr>
                             <td colspan="2">
-                                <span class="caption">Test results weighted by test size in steps (average steps per test: 9) .</span>
+                                <span class="caption">Test results weighted by test size in steps (average steps per test: 10) .</span>
                                 <span class="togglePieChart" id="toggleWeightedPieChart"><a href="#">Show/Hide Pie
                                     Chart</a></span>
                             </td>
@@ -421,8 +428,8 @@ passed
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
-            <td>2 (100%)</td>
             <td>0 (0%)</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -437,14 +444,14 @@ passed
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
-            <td>2 (100%)</td>
             <td>0 (0%)</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 0 seconds</td>
+                <td colspan="5">9 seconds</td>
         </tr>
         </body>
     </table>
@@ -466,8 +473,8 @@ passed
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="SUCCESS-text truncated-tag-title">
-                                <a href="5f913d061f10a9dd6e5bca50900013172a959c9b82a12c540913e8fc9594d6cb.html" title="Renfe Booking">Renfe Booking</a>
+                        <span class="ERROR-text truncated-tag-title">
+                                <a href="0d4a644ee2e94733f140082a342ff1bc2a4d611d580c42d9efcba889177a13da.html" title="Renfe Booking">Renfe Booking</a>
                         </span>
                     </td>
                     <td width="220px" class="table-figure">
@@ -475,9 +482,9 @@ passed
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="2 out of 2 tests (18 steps) passing">100%</span></td>
+                                <td class="related-tag-percentage"><span title="0 out of 2 tests (0 steps) passing">0%</span></td>
                                 <td width="150px">
-                                    <a href="5f913d061f10a9dd6e5bca50900013172a959c9b82a12c540913e8fc9594d6cb.html">
+                                    <a href="0d4a644ee2e94733f140082a342ff1bc2a4d611d580c42d9efcba889177a13da.html">
                                         <div class="pendingbar"
                                              title="0 out of 2 tests (0 steps) pending"
                                              style="width: 150px;">
@@ -489,13 +496,13 @@ passed
                                                      title="0 out of 2 tests (0 steps) compromised">
                                                     <div class="errorbar"
                                                          style="width: 150px;"
-                                                         title="0 out of 2 tests (0 steps) broken">
+                                                         title="2 out of 2 tests (20 steps) broken">
                                                         <div class="failingbar"
-                                                             style="width: 150px;"
+                                                             style="width: 0px;"
                                                              title="0 out of 2 tests (0 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 150px;"
-                                                                 title="2 out of 2 tests (18 steps) passing">
+                                                                 style="width: 0px;"
+                                                                 title="0 out of 2 tests (0 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -540,27 +547,27 @@ passed
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="c943668025b16e4ad8200d90b30d7ed8f3ed786dc0ffee6ee8a883a28c8232cd.html" class="ellipsis"
-                                           title="Search for a trip ">
+                                           title="Search for a trip Null pointer exception">
                                             Search for a trip&nbsp;(2  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">18</td>
+                                <td class="ERROR-text">20</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2019-08-21 10:23:11">10:23:11</td>
+                                <td class="ERROR-text" data-sort="2019-08-22 12:21:57">12:21:57</td>
 
-                                <td class="SUCCESS-text">60.66</td>
+                                <td class="ERROR-text">8.76</td>
                             </tr>
                         </tbody>
                     </table>

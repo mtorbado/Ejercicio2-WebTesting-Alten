@@ -1,48 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Renfe booking" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-08-21T08:23:12" hostname="SG-3012" time="59.866">
+<testsuite name="Renfe booking" tests="2" skipped="0" failures="2" errors="0" timestamp="2019-08-22T10:21:58" hostname="SG-3012" time="7.893">
   <properties/>
-  <testcase name="Search for a trip" classname="Renfe booking" time="37.974"/>
-  <testcase name="Search for a trip" classname="Renfe booking" time="21.863"/>
-  <system-out><![CDATA[    ?[32mGiven ?[0m?[32mI want to search train tickets?[0m                                      ?[90m# RenfeSearchStepDefinitions.iWantToSearchTrainTickets()?[0m
-    ?[32mWhen ?[0m?[32mI select origin "?[0m?[32m?[1mVALLADOLID?[0m?[32m"?[0m                                         ?[90m# RenfeSearchStepDefinitions.iSelectOrigin(String)?[0m
-    ?[32mAnd ?[0m?[32mI select destination "?[0m?[32m?[1mMADRID-CHAMARTIN?[0m?[32m"?[0m                               ?[90m# RenfeSearchStepDefinitions.iSelectDestination(String)?[0m
-    ?[32mAnd ?[0m?[32mdeparture date is ?[0m?[32m?[1m1?[0m?[32m days after today?[0m                                  ?[90m# RenfeSearchStepDefinitions.departureDateIsDaysAfterToday(int)?[0m
-    ?[32mAnd ?[0m?[32mreturn date is ?[0m?[32m?[1m2?[0m?[32m days after departure date?[0m                            ?[90m# RenfeSearchStepDefinitions.comebackDateIsDaysAfterDepartureDate(int)?[0m
-    ?[32mAnd ?[0m?[32mI select the following adults & children & children under 4 years old?[0m ?[90m# RenfeSearchStepDefinitions.iSelectTheFolowingAdultsChildrenChildrenUnder4YearsOld(DataTable)?[0m
-    ?[32mAnd ?[0m?[32mI press 'comprar' button?[0m                                              ?[90m# RenfeSearchStepDefinitions.iPressComprarButton()?[0m
-    ?[32mThen ?[0m?[32mthe result page is shown?[0m                                             ?[90m# RenfeSearchStepDefinitions.theResultPageIsShown()?[0m
-    ?[32mGiven ?[0m?[32mI want to search train tickets?[0m                                      ?[90m# RenfeSearchStepDefinitions.iWantToSearchTrainTickets()?[0m
-    ?[32mWhen ?[0m?[32mI select origin "?[0m?[32m?[1mMADRID-PUERTA DE ATOCHA?[0m?[32m"?[0m                            ?[90m# RenfeSearchStepDefinitions.iSelectOrigin(String)?[0m
-    ?[32mAnd ?[0m?[32mI select destination "?[0m?[32m?[1mBARCELONA-SANTS?[0m?[32m"?[0m                                ?[90m# RenfeSearchStepDefinitions.iSelectDestination(String)?[0m
-    ?[32mAnd ?[0m?[32mdeparture date is ?[0m?[32m?[1m1?[0m?[32m days after today?[0m                                  ?[90m# RenfeSearchStepDefinitions.departureDateIsDaysAfterToday(int)?[0m
-    ?[32mAnd ?[0m?[32mreturn date is ?[0m?[32m?[1m2?[0m?[32m days after departure date?[0m                            ?[90m# RenfeSearchStepDefinitions.comebackDateIsDaysAfterDepartureDate(int)?[0m
-    ?[32mAnd ?[0m?[32mI select the following adults & children & children under 4 years old?[0m ?[90m# RenfeSearchStepDefinitions.iSelectTheFolowingAdultsChildrenChildrenUnder4YearsOld(DataTable)?[0m
-    ?[32mAnd ?[0m?[32mI press 'comprar' button?[0m                                              ?[90m# RenfeSearchStepDefinitions.iPressComprarButton()?[0m
-    ?[32mThen ?[0m?[32mthe result page is shown?[0m                                             ?[90m# RenfeSearchStepDefinitions.theResultPageIsShown()?[0m
+  <testcase name="Search for a trip" classname="Renfe booking" time="2.198">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.page.RenfeSearchPageRemoteDriver.&lt;init&gt;(RenfeSearchPageRemoteDriver.java:70)
+	at com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(&lt;generated&gt;)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(&lt;generated&gt;)
+	at com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)
+	at ✽.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)
+</failure>
+  </testcase>
+  <testcase name="Search for a trip" classname="Renfe booking" time="5.685">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.page.RenfeSearchPageRemoteDriver.&lt;init&gt;(RenfeSearchPageRemoteDriver.java:70)
+	at com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(&lt;generated&gt;)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(&lt;generated&gt;)
+	at com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)
+	at ✽.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)
+</failure>
+  </testcase>
+  <system-out><![CDATA[    ?[31mGiven ?[0m?[31mI want to search train tickets?[0m                                      ?[90m# RenfeSearchStepDefinitions.iWantToSearchTrainTickets()?[0m
+      ?[31mjava.lang.NullPointerException
+	at com.page.RenfeSearchPageRemoteDriver.<init>(RenfeSearchPageRemoteDriver.java:70)
+	at com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(<generated>)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(<generated>)
+	at com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)
+	at ?.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)
+?[0m
+    ?[36mWhen ?[0m?[36mI select origin "?[0m?[36m?[1mVALLADOLID?[0m?[36m"?[0m                                         ?[90m# RenfeSearchStepDefinitions.iSelectOrigin(String)?[0m
+    ?[36mAnd ?[0m?[36mI select destination "?[0m?[36m?[1mMADRID-CHAMARTIN?[0m?[36m"?[0m                               ?[90m# RenfeSearchStepDefinitions.iSelectDestination(String)?[0m
+    ?[36mAnd ?[0m?[36mdeparture date is ?[0m?[36m?[1m1?[0m?[36m days after today?[0m                                  ?[90m# RenfeSearchStepDefinitions.departureDateIsDaysAfterToday(int)?[0m
+    ?[36mAnd ?[0m?[36mreturn date is ?[0m?[36m?[1m2?[0m?[36m days after departure date?[0m                            ?[90m# RenfeSearchStepDefinitions.comebackDateIsDaysAfterDepartureDate(int)?[0m
+    ?[36mAnd ?[0m?[36mI select the following adults & children & children under 4 years old?[0m ?[90m# RenfeSearchStepDefinitions.iSelectTheFolowingAdultsChildrenChildrenUnder4YearsOld(DataTable)?[0m
+    ?[36mAnd ?[0m?[36mI press 'comprar' button?[0m                                              ?[90m# RenfeSearchStepDefinitions.iPressComprarButton()?[0m
+    ?[36mThen ?[0m?[36mthe result page is shown?[0m                                             ?[90m# RenfeSearchStepDefinitions.theResultPageIsShown()?[0m
+    ?[31mGiven ?[0m?[31mI want to search train tickets?[0m                                      ?[90m# RenfeSearchStepDefinitions.iWantToSearchTrainTickets()?[0m
+      ?[31mjava.lang.NullPointerException
+	at com.page.RenfeSearchPageRemoteDriver.<init>(RenfeSearchPageRemoteDriver.java:70)
+	at com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java:22)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.CGLIB$openRenfeSearchPage$7(<generated>)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae$$FastClassByCGLIB$$eeaaaed0.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:362)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:133)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at com.serenitySteps.RenfeSearchSteps$$EnhancerByCGLIB$$5c9032ae.openRenfeSearchPage(<generated>)
+	at com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java:22)
+	at ?.I want to search train tickets(src/test/resources/features/renfeSearch.feature:4)
+?[0m
+    ?[36mWhen ?[0m?[36mI select origin "?[0m?[36m?[1mMADRID-PUERTA DE ATOCHA?[0m?[36m"?[0m                            ?[90m# RenfeSearchStepDefinitions.iSelectOrigin(String)?[0m
+    ?[36mAnd ?[0m?[36mI select destination "?[0m?[36m?[1mBARCELONA-SANTS?[0m?[36m"?[0m                                ?[90m# RenfeSearchStepDefinitions.iSelectDestination(String)?[0m
+    ?[36mAnd ?[0m?[36mdeparture date is ?[0m?[36m?[1m1?[0m?[36m days after today?[0m                                  ?[90m# RenfeSearchStepDefinitions.departureDateIsDaysAfterToday(int)?[0m
+    ?[36mAnd ?[0m?[36mreturn date is ?[0m?[36m?[1m2?[0m?[36m days after departure date?[0m                            ?[90m# RenfeSearchStepDefinitions.comebackDateIsDaysAfterDepartureDate(int)?[0m
+    ?[36mAnd ?[0m?[36mI select the following adults & children & children under 4 years old?[0m ?[90m# RenfeSearchStepDefinitions.iSelectTheFolowingAdultsChildrenChildrenUnder4YearsOld(DataTable)?[0m
+    ?[36mAnd ?[0m?[36mI press 'comprar' button?[0m                                              ?[90m# RenfeSearchStepDefinitions.iPressComprarButton()?[0m
+    ?[36mThen ?[0m?[36mthe result page is shown?[0m                                             ?[90m# RenfeSearchStepDefinitions.theResultPageIsShown()?[0m
 ]]></system-out>
-  <system-err><![CDATA[ago. 21, 2019 10:23:13 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
-INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-ago. 21, 2019 10:23:27 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] INFO net.serenitybdd.core.Serenity - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+  <system-err><![CDATA[[Test worker] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Search for a trip
-----------------------------------------------------------------------------
-[Test worker] INFO net.serenitybdd.core.Serenity - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+TEST FAILED WITH ERROR: Search for a trip
+---------------------------------------------------------------------
+[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open renfe search page
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Search for a trip
-----------------------------------------------------------------------------
+TEST FAILED WITH ERROR: Search for a trip
+---------------------------------------------------------------------
+[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open renfe search page
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
 ]]></system-err>
 </testsuite>
