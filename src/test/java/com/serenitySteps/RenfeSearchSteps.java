@@ -1,17 +1,29 @@
 package com.serenitySteps;
 import com.page.RenfeResultsPage;
 import com.page.RenfeSearchPage;
+import com.page.RenfeSearchPageRemoteDriver;
 
+import java.net.MalformedURLException;
 import java.util.List;
 import java.util.Map;
 
 public class RenfeSearchSteps {
 
-    private RenfeSearchPage searchPage;
+//    private RenfeSearchPage searchPage;
+    private RenfeSearchPageRemoteDriver searchPage;
     private RenfeResultsPage resultsPage;
     
     public void openRenfeSearchPage() {
-        searchPage.open();
+        // Comment this if you are using RenfeSearchPageRemoteDriver for setting NODE and BROWSER via env variables
+        //searchPage.open();
+
+        // Comment this if you are using RenfeSearchPage for gradle tasks 'chrome' or 'firefox'
+        try {
+            searchPage = new RenfeSearchPageRemoteDriver();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void selectOrigin(String station) {

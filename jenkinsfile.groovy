@@ -14,7 +14,9 @@ pipeline {
                 sh 'chmod u+x src/test/resources/webdrivers/chrome/chromedriver'
                 sh 'chmod u+x src/test/resources/webdrivers/firefox/geckodriver'
 
-                // browser is selected here, 'chrome' or 'firefox' gradle tasks
+                // browser is selected here, 'chrome' or 'firefox' gradle tasks.
+                // 'test' is used for parameterized execution: set BROWSER and NODE enviroment variables and use
+                // RenfeSearchPageRemoteDriver instead
                 sh './gradlew chrome'
             }
         }

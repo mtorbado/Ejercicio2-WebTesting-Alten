@@ -1,29 +1,27 @@
 package com.page;
 
 import net.serenitybdd.core.annotations.findby.By;
-import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.WhenPageOpens;
 import org.junit.Assert;
-import org.openqa.selenium.*;
-
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-
-// * As this class extends SerenityBDD  PageObject, webDriver can't be configured manually. So, there is no option to
-// * generate a RemoteWebDriver with custom DesiredCapabilities to determine  in which Selenium Grid node is executed.
-// * Use RenfeSearchPageRemoteDriver for that approach instead.
-
 @DefaultUrl("http://www.renfe.com/")
-public class RenfeSearchPage extends PageObject {
+public class RenfeSearchPageRemoteDriver {
 
     // ATTRIBUTES
     @CacheLookup
@@ -63,8 +61,24 @@ public class RenfeSearchPage extends PageObject {
     private String datePattern = "dd/MM/yyyy";
     private Calendar departureDay;
 
-    public RenfeSearchPage(WebDriver driver) {
-        super(driver);
+    public RenfeSearchPageRemoteDriver() throws MalformedURLException {
+        WebDriver driver;
+
+        String nodeUrl = "http://10.0.75.1";
+        DesiredCapabilities capability = null;
+
+        if (System.getenv("BROWSER").equals("chrome")) {
+            capability = DesiredCapabilities.chrome();
+            capability.setBrowserName("chrome");
+        }
+        else if (System.getenv("BROWSER").equals("chrome")) {
+            capability = DesiredCapabilities.firefox();
+            capability.setBrowserName("firefox");
+        }
+        capability.setPlatform(Platform.WIN10);
+        capability.setCapability("applicationName", System.getenv("NODE"));
+
+        driver = new RemoteWebDriver(new URL(nodeUrl), capability);
         maximizeWindow(driver);
         currentDate = new Date();
     }

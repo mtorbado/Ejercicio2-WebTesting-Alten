@@ -52,6 +52,9 @@ test {
     systemProperties System.getProperties()
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
+
+    println "Browser is: " + System.getenv("BROWSER")
+    println "Node is: " + System.getenv("NODE")
 }
 
 task firefox(type: Test) {
