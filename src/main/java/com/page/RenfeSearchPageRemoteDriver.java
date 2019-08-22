@@ -23,39 +23,39 @@ import java.util.List;
 @DefaultUrl("http://www.renfe.com/")
 public class RenfeSearchPageRemoteDriver {
 
-    // ATTRIBUTES
-    @CacheLookup
-    // ORIGIN/DESTINATION INPUT FIELDS
-    @FindBy(id = "IdOrigen")
-    private WebElementFacade originInput;
-    @FindBy(id = "IdDestino")
-    private WebElementFacade destinationInput;
-
-    // ORIGIN/DESTINATION SELECTIONS
-    //@FindBy(xpath = "//*[@id='ui-id-1']")
-    @FindBy(id = "ui-id-1")
-    private WebElementFacade originSelection;
-    //@FindBy(xpath = "//*[@id='ui-id-2']")
-    @FindBy(id = "ui-id-2")
-    private WebElementFacade destinationSelection;
-
-    // DEPARTURE/RETURN DATES INPUT FIELDS
-    @FindBy(id = "__fechaIdaVisual")
-    private WebElementFacade departureDateInput;
-    @FindBy(id = "__fechaVueltaVisual")
-    private WebElementFacade returnDateInput;
-
-    //PASSENGERS INPUT FIELDS
-    @FindBy(id = "__numAdultos")
-    private WebElementFacade numAdultsInput;
-    @FindBy(id = "__numNinos")
-    private WebElementFacade numChildrenInput;
-    @FindBy(id = "__numBebe")
-    private WebElementFacade numBabyInput;
-
-    //BUY BUTTON
-    @FindBy(xpath = "//*[@id=\"datosBusqueda\"]/button")
-    private WebElementFacade buyButton;
+//    // ATTRIBUTES
+//    @CacheLookup
+//    // ORIGIN/DESTINATION INPUT FIELDS
+//    @FindBy(id = "IdOrigen")
+//    private WebElementFacade originInput;
+//    @FindBy(id = "IdDestino")
+//    private WebElementFacade destinationInput;
+//
+//    // ORIGIN/DESTINATION SELECTIONS
+//    //@FindBy(xpath = "//*[@id='ui-id-1']")
+//    @FindBy(id = "ui-id-1")
+//    private WebElementFacade originSelection;
+//    //@FindBy(xpath = "//*[@id='ui-id-2']")
+//    @FindBy(id = "ui-id-2")
+//    private WebElementFacade destinationSelection;
+//
+//    // DEPARTURE/RETURN DATES INPUT FIELDS
+//    @FindBy(id = "__fechaIdaVisual")
+//    private WebElementFacade departureDateInput;
+//    @FindBy(id = "__fechaVueltaVisual")
+//    private WebElementFacade returnDateInput;
+//
+//    //PASSENGERS INPUT FIELDS
+//    @FindBy(id = "__numAdultos")
+//    private WebElementFacade numAdultsInput;
+//    @FindBy(id = "__numNinos")
+//    private WebElementFacade numChildrenInput;
+//    @FindBy(id = "__numBebe")
+//    private WebElementFacade numBabyInput;
+//
+//    //BUY BUTTON
+//    @FindBy(xpath = "//*[@id=\"datosBusqueda\"]/button")
+//    private WebElementFacade buyButton;
 
 
     private WebDriver driver = null;
@@ -118,7 +118,7 @@ public class RenfeSearchPageRemoteDriver {
 
         SimpleDateFormat f = new SimpleDateFormat(datePattern);
         String departureDate = f.format(day.getTime());
-        departureDateInput.type(departureDate);
+        driver.findElement(By.id("__fechaIdaVisual")).sendKeys(departureDate);
     }
 
     public void selectReturnDate(int daysAfterDeparture) {
@@ -127,17 +127,16 @@ public class RenfeSearchPageRemoteDriver {
         departureDay.add(Calendar.DATE, daysAfterDeparture);
         SimpleDateFormat f = new SimpleDateFormat(datePattern);
         String returnDate = f.format(departureDay.getTime());
-        returnDateInput.type(returnDate);
+        driver.findElement(By.id("__fechaVueltaVisual")).sendKeys(returnDate);
     }
 
     public void selectPassengers(int adults, int children, int childrenUnder4) {
-        numAdultsInput.type(Integer.toString(adults));
-        numChildrenInput.type(Integer.toString(children));
-        numBabyInput.type(Integer.toString(childrenUnder4));
+        driver.findElement(By.id("__numAdultos")).sendKeys(Integer.toString(adults));
+        driver.findElement(By.id("__numNinos")).sendKeys(Integer.toString(children));
+        driver.findElement(By.id("__numBebe")).sendKeys(Integer.toString(childrenUnder4));
     }
 
     public void purchase() {
-        buyButton.waitUntilClickable();
-        buyButton.click();
+        driver.findElement(By.xpath("//*[@id=\"datosBusqueda\"]/button")).click();
     }
 }
