@@ -95,7 +95,6 @@ public class RenfeSearchPageRemoteDriver {
     }
 
     public void selectDestination(String station) {
-        destinationInput.type(station);
         driver.findElement(By.id("IdDestino")).sendKeys(station);
         selectStation(station, driver.findElement(By.id("ui-id-2")));
     }
