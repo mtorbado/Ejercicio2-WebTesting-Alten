@@ -8,6 +8,7 @@ import net.thucydides.core.annotations.WhenPageOpens;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -63,13 +64,13 @@ public class RenfeSearchPage extends PageObject {
     private String datePattern = "dd/MM/yyyy";
     private Calendar departureDay;
 
-    public RenfeSearchPage(WebDriver driver) {
+    public RenfeSearchPage(RemoteWebDriver driver) {
         super(driver);
         maximizeWindow(driver);
         currentDate = new Date();
     }
 
-    private void maximizeWindow(WebDriver driver) {
+    private void maximizeWindow(RemoteWebDriver driver) {
         driver.manage().window().maximize();
     }
 
