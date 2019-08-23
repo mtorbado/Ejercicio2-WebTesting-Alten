@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.List;
 
 
-// * As this class extends SerenityBDD  PageObject, webDriver can't be configured manually. So, there is no option to
+// * As this class extends SerenityBDD  PageObject, driver can't be configured manually. So, there is no option to
 // * generate a RemoteWebDriver with custom DesiredCapabilities to determine  in which Selenium Grid node is executed.
 // * Use RenfeSearchPageRemoteDriver for that approach instead.
 
@@ -64,13 +64,13 @@ public class RenfeSearchPage extends PageObject {
     private String datePattern = "dd/MM/yyyy";
     private Calendar departureDay;
 
-    public RenfeSearchPage(RemoteWebDriver driver) {
+    public RenfeSearchPage(WebDriver driver) {
         super(driver);
         maximizeWindow(driver);
         currentDate = new Date();
     }
 
-    private void maximizeWindow(RemoteWebDriver driver) {
+    private void maximizeWindow(WebDriver driver) {
         driver.manage().window().maximize();
     }
 

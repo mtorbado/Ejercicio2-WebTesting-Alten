@@ -19,7 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-// * This approach Is still not working as desired. Use RenfeSearchPage with -Dwebdriver option in jenkinsfile instead
+// * This approach Is still not working as desired. Use RenfeSearchPage with -Dwebdriver options in jenkinsfile instead
 
 @DefaultUrl("http://www.renfe.com/")
 public class RenfeSearchPageRemoteDriver {
