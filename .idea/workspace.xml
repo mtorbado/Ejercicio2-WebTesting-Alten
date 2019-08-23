@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1f67b3-ade1-4f10-9a86-3da8a0f3faae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkinsfile.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfile.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPageRemoteDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/page/RenfeSearchPageRemoteDriver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
