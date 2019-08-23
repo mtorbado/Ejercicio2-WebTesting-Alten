@@ -14,10 +14,9 @@ public class RenfeSearchSteps {
     private RenfeResultsPage resultsPage;
     
     public void openRenfeSearchPage() {
-        // Comment this if you are using RenfeSearchPageRemoteDriver for setting NODE and BROWSER via env variables
-        searchPage.open();
+        searchPage.open(); // Comment this if you are using RenfeSearchPageRemoteDriver
 
-        // Comment this if you are using RenfeSearchPage for gradle tasks 'chrome' or 'firefox'
+//        // Comment this if you are using RenfeSearchPage for gradle tasks 'chrome' or 'firefox'
 //        try {
 //            searchPage = new RenfeSearchPageRemoteDriver();
 //        } catch (MalformedURLException e) {
