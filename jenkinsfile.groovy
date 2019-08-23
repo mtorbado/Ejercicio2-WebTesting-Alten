@@ -1,5 +1,11 @@
 pipeline {
     agent any
+
+    parameters {
+        string(name: 'browser', defaultValue: 'chrome', description: "Web browser used to run the tests")
+        string(name: 'nodeNumber', defaultValue: '1', description: "Selenium grid's node number")
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -19,7 +25,9 @@ pipeline {
                 // RenfeSearchPageRemoteDriver instead
 
 //              sh './gradlew parameterizedTest'
-                sh './gradlew clean test aggregate -Dwebdriver.remote.url=http://10.0.75.1:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
+                sh "./gradlew clean test aggregate -Dwebdriver.remote.url=http://10.0.75.1:4444/wd/hub " +
+                        "-Dwebdriver.remote.driver=" + params.BROWSER + " -Dwebdriver.remote.os=WINDOWS" +
+                        " -Dserenity.driver.capabilities=applicationName:" + params.NODE
             }
         }
     }
