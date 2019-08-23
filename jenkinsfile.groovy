@@ -15,9 +15,11 @@ pipeline {
                 sh 'chmod u+x src/test/resources/webdrivers/firefox/geckodriver'
 
                 // browser is selected here, 'chrome' or 'firefox' gradle tasks.
-                // 'test' is used for parameterized execution: set BROWSER and NODE enviroment variables and use
+                // 'parameterizedTest' is used for parameterized execution: set BROWSER and NODE enviroment variables and use
                 // RenfeSearchPageRemoteDriver instead
-                sh './gradlew parameterizedTest'
+
+//                sh './gradlew parameterizedTest'
+                sh './gradlex -Dwebdriver.remote.url=http://localhost:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
             }
         }
     }

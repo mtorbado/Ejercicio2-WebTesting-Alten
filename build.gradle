@@ -48,14 +48,20 @@ dependencies {
 
 gradle.startParameter.continueOnFailure = true // Allow build to continue on test failure
 
-task parameterizedTest(type: Test) {
+test {
     systemProperties System.getProperties()
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
-
-    println "Browser is: " + System.getenv("BROWSER")
-    println "Node is: " + System.getenv("NODE")
 }
+
+//task parameterizedTest(type: Test) {
+//    systemProperties System.getProperties()
+//    testLogging.showStandardStreams = true
+//    include "com/testRunner/RenfeTestRunner.class"
+//
+//    println "Browser is: " + System.getenv("BROWSER")
+//    println "Node is: " + System.getenv("NODE")
+//}
 
 task firefox(type: Test) {
 

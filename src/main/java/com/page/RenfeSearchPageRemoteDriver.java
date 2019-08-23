@@ -1,8 +1,6 @@
 package com.page;
 
 import net.serenitybdd.core.annotations.findby.By;
-import net.serenitybdd.core.pages.WebElementFacade;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.WhenPageOpens;
 import org.junit.Assert;
@@ -11,8 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,43 +19,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+// * This approach Is still not working as desired. Use RenfeSearchPage with -Dwebdriver option in jenkinsfile instead
+
 @DefaultUrl("http://www.renfe.com/")
 public class RenfeSearchPageRemoteDriver {
-
-//    // ATTRIBUTES
-//    @CacheLookup
-//    // ORIGIN/DESTINATION INPUT FIELDS
-//    @FindBy(id = "IdOrigen")
-//    private WebElementFacade originInput;
-//    @FindBy(id = "IdDestino")
-//    private WebElementFacade destinationInput;
-//
-//    // ORIGIN/DESTINATION SELECTIONS
-//    //@FindBy(xpath = "//*[@id='ui-id-1']")
-//    @FindBy(id = "ui-id-1")
-//    private WebElementFacade originSelection;
-//    //@FindBy(xpath = "//*[@id='ui-id-2']")
-//    @FindBy(id = "ui-id-2")
-//    private WebElementFacade destinationSelection;
-//
-//    // DEPARTURE/RETURN DATES INPUT FIELDS
-//    @FindBy(id = "__fechaIdaVisual")
-//    private WebElementFacade departureDateInput;
-//    @FindBy(id = "__fechaVueltaVisual")
-//    private WebElementFacade returnDateInput;
-//
-//    //PASSENGERS INPUT FIELDS
-//    @FindBy(id = "__numAdultos")
-//    private WebElementFacade numAdultsInput;
-//    @FindBy(id = "__numNinos")
-//    private WebElementFacade numChildrenInput;
-//    @FindBy(id = "__numBebe")
-//    private WebElementFacade numBabyInput;
-//
-//    //BUY BUTTON
-//    @FindBy(xpath = "//*[@id=\"datosBusqueda\"]/button")
-//    private WebElementFacade buyButton;
-
 
     private WebDriver driver = null;
     private Date currentDate;
@@ -113,10 +76,8 @@ public class RenfeSearchPageRemoteDriver {
     public void selectStation(String station, WebElement stationInput) {
         List<WebElement> stationsWEList = stationInput.findElements(By.tagName("li"));
         for (int i = 0; i < stationsWEList.size(); i++) {
-            System.out.println(stationsWEList.get(i).getText());
             if(stationsWEList.get(i).getText().equals(station)){
                 stationsWEList.get(i).click();
-                System.out.println("Click en elemento " + stationsWEList.get(i).toString());
             }
         }
 
