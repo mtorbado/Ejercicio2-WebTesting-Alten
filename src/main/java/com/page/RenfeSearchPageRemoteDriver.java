@@ -104,6 +104,7 @@ public class RenfeSearchPageRemoteDriver {
         for (int i = 0; i < stationsWEList.size(); i++) {
             if(stationsWEList.get(i).getText().equals(station)){
                 stationsWEList.get(i).click();
+                System.out.println("Click en elemento " + stationsWEList.get(i).toString());
             }
         }
 
