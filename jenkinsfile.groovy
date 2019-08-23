@@ -19,7 +19,7 @@ pipeline {
                 // RenfeSearchPageRemoteDriver instead
 
 //              sh './gradlew parameterizedTest'
-                sh './gradlew -Dwebdriver.remote.url=http://localhost:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
+                sh './gradlew test -Dwebdriver.remote.url=http://localhost:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
             }
         }
     }
