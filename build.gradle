@@ -48,7 +48,7 @@ dependencies {
 
 gradle.startParameter.continueOnFailure = true // Allow build to continue on test failure
 
-test {
+task parameterizedTest(type: Test) {
     systemProperties System.getProperties()
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
