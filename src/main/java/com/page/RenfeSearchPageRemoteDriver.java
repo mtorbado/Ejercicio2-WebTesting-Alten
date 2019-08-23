@@ -102,6 +102,7 @@ public class RenfeSearchPageRemoteDriver {
     public void selectStation(String station, WebElement stationInput) {
         List<WebElement> stationsWEList = stationInput.findElements(By.tagName("li"));
         for (int i = 0; i < stationsWEList.size(); i++) {
+            System.out.println(stationsWEList.get(i).getText());
             if(stationsWEList.get(i).getText().equals(station)){
                 stationsWEList.get(i).click();
                 System.out.println("Click en elemento " + stationsWEList.get(i).toString());
