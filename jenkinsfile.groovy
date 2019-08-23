@@ -19,10 +19,7 @@ pipeline {
                 // RenfeSearchPageRemoteDriver instead
 
 //              sh './gradlew parameterizedTest'
-                sh "./gradlew clean test aggregate -Dwebdriver.remote.url=http://10.0.75.1:4444/wd/hub" +
-                        " -Dwebdriver.remote.driver= " + System.getenv('BROWSER') +" " +
-                        "-Dwebdriver.remote.os=WINDOWS -Dserenity.driver.capabilities=nodeNumber: "
-                        + System.getenv('NODE')
+                sh './gradlew test -Dwebdriver.remote.url=http://localhost:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
             }
         }
     }
