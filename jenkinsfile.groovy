@@ -18,8 +18,8 @@ pipeline {
                 // 'parameterizedTest' is used for parameterized execution: set BROWSER and NODE enviroment variables and use
                 // RenfeSearchPageRemoteDriver instead
 
-//                sh './gradlew parameterizedTest'
-                sh './gradlex -Dwebdriver.remote.url=http://localhost:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
+//              sh './gradlew parameterizedTest'
+                sh './gradlew -Dwebdriver.remote.url=http://localhost:4444/wd/hub -Dwebdriver.remote.driver=chrome -Dwebdriver.remote.os=WINDOWS'
             }
         }
     }
