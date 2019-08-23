@@ -13,6 +13,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -90,15 +92,21 @@ public class RenfeSearchPageRemoteDriver {
     @WhenPageOpens
     public void waitOpen() { }
 
-    public void selectOrigin(String station) throws InterruptedException {
+    public void selectOrigin(String station) {
         driver.findElement(By.id("IdOrigen")).sendKeys(station);
-        driver.wait(1000);
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ui-id-1")));
+
         selectStation(station, driver.findElement(By.id("ui-id-1")));
     }
 
-    public void selectDestination(String station) throws InterruptedException {
+    public void selectDestination(String station) {
         driver.findElement(By.id("IdDestino")).sendKeys(station);
-        driver.wait(1000);
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ui-id-2")));
+
         selectStation(station, driver.findElement(By.id("ui-id-2")));
     }
 

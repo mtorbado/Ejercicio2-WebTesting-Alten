@@ -26,11 +26,11 @@ public class RenfeSearchSteps {
 
     }
 
-    public void selectOrigin(String station) throws InterruptedException {
+    public void selectOrigin(String station) {
         searchPage.selectOrigin(station);
     }
 
-    public void selectDestination(String station) throws InterruptedException {
+    public void selectDestination(String station) {
         searchPage.selectDestination(station);
     }
 
