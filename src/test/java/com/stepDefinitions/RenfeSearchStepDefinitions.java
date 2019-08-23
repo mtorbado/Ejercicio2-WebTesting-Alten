@@ -23,12 +23,12 @@ public class RenfeSearchStepDefinitions {
     }
 
     @When("^I select origin \"([^\"]*)\"$")
-    public void iSelectOrigin(String station) {
+    public void iSelectOrigin(String station) throws InterruptedException {
        steps.selectOrigin(station);
     }
 
     @And("^I select destination \"([^\"]*)\"$")
-    public void iSelectDestination(String station) {
+    public void iSelectDestination(String station) throws InterruptedException {
         steps.selectDestination(station);
     }
 

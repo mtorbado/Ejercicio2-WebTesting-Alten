@@ -2,6 +2,7 @@ package com.page;
 
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.WhenPageOpens;
 import org.junit.Assert;
@@ -89,13 +90,15 @@ public class RenfeSearchPageRemoteDriver {
     @WhenPageOpens
     public void waitOpen() { }
 
-    public void selectOrigin(String station) {
+    public void selectOrigin(String station) throws InterruptedException {
         driver.findElement(By.id("IdOrigen")).sendKeys(station);
+        driver.wait(1000);
         selectStation(station, driver.findElement(By.id("ui-id-1")));
     }
 
-    public void selectDestination(String station) {
+    public void selectDestination(String station) throws InterruptedException {
         driver.findElement(By.id("IdDestino")).sendKeys(station);
+        driver.wait(1000);
         selectStation(station, driver.findElement(By.id("ui-id-2")));
     }
 
