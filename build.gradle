@@ -52,6 +52,9 @@ test {
     systemProperties System.getProperties()
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
+
+    println "Browser is: " + System.getenv("BROWSER")
+    println "Node is: " + System.getenv("NODE")
 }
 
 //task parameterizedTest(type: Test) {
@@ -63,25 +66,25 @@ test {
 //    println "Node is: " + System.getenv("NODE")
 //}
 
-//task firefox(type: Test) {
-//
-//    ant.propertyfile(file: "serenity.properties") {
-//        entry(key: "propertyName", value: "propertyValue")
-//    }
-//
-//    systemProperties System.getProperties()
-//    systemProperties['context'] = 'firefox'
-//    systemProperties['webdriver.driver'] = 'firefox'
-//
-//    testLogging.showStandardStreams = true
-//    include"com/testRunner/RenfeTestRunner.class"
-//}
-//
-//task chrome(type: Test) {
-//    systemProperties System.getProperties()
-//    systemProperties['context'] = 'chrome'
-//    systemProperties['webdriver.driver'] = 'chrome'
-//
-//    testLogging.showStandardStreams = true
-//    include "com/testRunner/RenfeTestRunner.class"
-//}
+task firefox(type: Test) {
+
+    ant.propertyfile(file: "serenity.properties") {
+        entry(key: "propertyName", value: "propertyValue")
+    }
+
+    systemProperties System.getProperties()
+    systemProperties['context'] = 'firefox'
+    systemProperties['webdriver.driver'] = 'firefox'
+
+    testLogging.showStandardStreams = true
+    include"com/testRunner/RenfeTestRunner.class"
+}
+
+task chrome(type: Test) {
+    systemProperties System.getProperties()
+    systemProperties['context'] = 'chrome'
+    systemProperties['webdriver.driver'] = 'chrome'
+
+    testLogging.showStandardStreams = true
+    include "com/testRunner/RenfeTestRunner.class"
+}

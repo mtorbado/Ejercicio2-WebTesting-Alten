@@ -1,11 +1,5 @@
 pipeline {
     agent any
-
-    parameters {
-        string(name: 'browser', defaultValue: 'chrome', description: "Web browser used to run the tests")
-        string(name: 'nodeNumber', defaultValue: '1', description: "Selenium grid's node number")
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -20,11 +14,7 @@ pipeline {
                 sh 'chmod u+x src/test/resources/webdrivers/chrome/chromedriver'
                 sh 'chmod u+x src/test/resources/webdrivers/firefox/geckodriver'
 
-                // browser is selected here, 'chrome' or 'firefox' gradle tasks.
-                // 'parameterizedTest' is used for parameterized execution: set BROWSER and NODE enviroment variables and use
-                // RenfeSearchPageRemoteDriver instead
-
-//              sh './gradlew parameterizedTest'
+                // browser is selected here, 'chrome' or 'firefox' gradle tasks, or just 'test' to pass them via Jenkins parameters
                 sh "./gradlew clean test aggregate -Dwebdriver.remote.url=http://10.0.75.1:4444/wd/hub " +
                         "-Dwebdriver.remote.driver=" + params.BROWSER + " -Dwebdriver.remote.os=WINDOWS" +
                         " -Dserenity.driver.capabilities=applicationName:" + params.NODE
