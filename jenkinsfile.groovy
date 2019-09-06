@@ -19,6 +19,7 @@ pipeline {
 //                        "-Dwebdriver.remote.driver=" + params.BROWSER + " -Dwebdriver.remote.os=WINDOWS" +
 //                        " -Dserenity.driver.capabilities=applicationName:" + params.NODE
 
+                sh "./gradlew tasks"
                 sh "./gradlew clean chrome aggregate -Dwebdriver.remote.url=http://172.21.36.168:4444/wd/hub " +
                         "-Dserenity.driver.capabilities=platformName:Android" +
                         "-Dserenity.driver.capabilities=deviceName:Nexus 5 API 29" +
