@@ -50,6 +50,8 @@ gradle.startParameter.continueOnFailure = true // Allow build to continue on tes
 
 test {
     systemProperties System.getProperties()
+    systemProperties['enableVNC'] = 'true'
+
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"
 
@@ -75,6 +77,7 @@ task firefox(type: Test) {
     systemProperties System.getProperties()
     systemProperties['context'] = 'firefox'
     systemProperties['webdriver.driver'] = 'firefox'
+    systemProperties['enableVNC'] = 'true'
 
     testLogging.showStandardStreams = true
     include"com/testRunner/RenfeTestRunner.class"
@@ -84,6 +87,7 @@ task chrome(type: Test) {
     systemProperties System.getProperties()
     systemProperties['context'] = 'chrome'
     systemProperties['webdriver.driver'] = 'chrome'
+    systemProperties['enableVNC'] = 'true'
 
     testLogging.showStandardStreams = true
     include "com/testRunner/RenfeTestRunner.class"

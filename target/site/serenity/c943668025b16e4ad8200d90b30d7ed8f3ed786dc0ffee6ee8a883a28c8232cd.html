@@ -77,7 +77,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-08-2019 12:21</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-09-2019 12:33</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -153,10 +153,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-ERROR"><a href="#0">1</a></td>
-                            <td class="test-ERROR"><a href="#0">VALLADOLID</a>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">VALLADOLID</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">MADRID-CHAMARTIN</a>
+                            <td class="test-SUCCESS"><a href="#0">MADRID-CHAMARTIN</a>
                             </td>
                     </tr>
                     <tr>
@@ -177,21 +177,22 @@
                     <th width="65">                        &nbsp;
                     </th>
 
-                    <th width="%" class="step-description-wide-column greentext">
+                    <th width="%" class="step-description-column greentext">
                         Steps
                     </th>
+                    <th width="120" class="greentext">Screenshot</th>
                     <th width="100" class="greentext">Outcome</th>
                     <th width="75" class="greentext">Duration</th>
                 </tr>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -206,118 +207,39 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">1.87s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">23.23s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">
+                            <span class="nested-group-step">
                                 Given I want to search train tickets
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">1.63s</span></td>
-                </tr>
-                <tr class="test-ERROR">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Open renfe search page
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.02s</span></td>
-                </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Null pointer exception'>
-                                <pre>Null pointer exception</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-3">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-3" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                com.page.RenfeSearchPageRemoteDriver.<init>(RenfeSearchPageRemoteDriver.java
-                                    :70) <br>
-                                com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java
-                                    :22) <br>
-                                com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java
-                                    :22) <br>
-                                jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java
-                                    :-2) <br>
-                                jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java
-                                    :62) <br>
-                                jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java
-                                    :43) <br>
-                                cucumber.runner.Runner.runPickle(Runner.java
-                                    :80) <br>
-                                jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java
-                                    :-2) <br>
-                                jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java
-                                    :62) <br>
-                                jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java
-                                    :43) <br>
-                                jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java
-                                    :-2) <br>
-                                jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java
-                                    :62) <br>
-                                jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java
-                                    :43) <br>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <td width="100" class="SUCCESS-text">
                         </td>
-                    </tr>
-
-                <tr class="test-SKIPPED">
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">10.67s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -327,14 +249,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.04s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.84s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -344,14 +268,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.43s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -361,14 +287,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -378,14 +306,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.78s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -395,14 +325,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.2s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -412,14 +344,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.39s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -429,8 +363,10 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.04s</span></td>
                 </tr>
 
                     </table>
@@ -456,13 +392,34 @@
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.18s</span></td>
+                    <td width="100"><span class="top-level-step">8.92s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection1" style="display:none; width:100%">
 
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Given I want to search train tickets
+                            </span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.01s</span></td>
+                </tr>
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         
@@ -472,13 +429,15 @@
                     <td>
                         <div class="step-description">
                             <span class="nested-step">
-                                Given I want to search train tickets
+                                When I select origin "MADRID-PUERTA DE ATOCHA"
                             </span>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">0.03s</span></td>
+                    <td width="100"><span class="nested-step">4.75s</span></td>
                 </tr>
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
@@ -489,20 +448,29 @@
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Open renfe search page
+                                Select origin: MADRID-PUERTA DE ATOCHA
                             </span>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                                <a href="c943668025b16e4ad8200d90b30d7ed8f3ed786dc0ffee6ee8a883a28c8232cd_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="cc919bd32e175d856f267865d08651181b0761f6a8a55fc69a66dad27db7794d.png"
+                                         href="cc919bd32e175d856f267865d08651181b0761f6a8a55fc69a66dad27db7794d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
                     <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                    <td width="100"><span class="nested-group-step">1.08s</span></td>
                 </tr>
                     <tr class="test-ERROR">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
                             <div class="error-message ellipsis"
-                                 title='Null pointer exception'>
-                                <pre>Null pointer exception</pre>
+                                 title='Stale element reference exception: The following error occurred: stale element reference: element is not attached to the page document'>
+                                <pre>Stale element reference exception: The following error occurred: stale element reference: element is not attached to the page document</pre>
                             </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
@@ -520,16 +488,27 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
+                                org.openqa.selenium.StaleElementReferenceException
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                com.page.RenfeSearchPageRemoteDriver.<init>(RenfeSearchPageRemoteDriver.java
-                                    :70) <br>
-                                com.serenitySteps.RenfeSearchSteps.openRenfeSearchPage(RenfeSearchSteps.java
-                                    :22) <br>
-                                com.stepDefinitions.RenfeSearchStepDefinitions.iWantToSearchTrainTickets(RenfeSearchStepDefinitions.java
-                                    :22) <br>
+                                    <h5>
+                                        <pre>The following error occurred: stale element reference: element is not attached to the page document<br>  (Session info: chrome=76.0.3809.87)<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html<br>Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'<br>System info: host: 'SG-3012', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: /tmp/.com.google.Chrome.YbiqHJ}, goog:chromeOptions: {debuggerAddress: localhost:38839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br>Session ID: 7d29b4b6d882dfca536afa74ecd46634</pre>
+                                    </h5>
+                                jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java
+                                    :-2) <br>
+                                jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java
+                                    :62) <br>
+                                jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java
+                                    :45) <br>
+                                com.page.RenfeSearchPage.selectStation(RenfeSearchPage.java
+                                    :93) <br>
+                                com.page.RenfeSearchPage.selectOrigin(RenfeSearchPage.java
+                                    :82) <br>
+                                com.serenitySteps.RenfeSearchSteps.selectOrigin(RenfeSearchSteps.java
+                                    :29) <br>
+                                com.stepDefinitions.RenfeSearchStepDefinitions.iSelectOrigin(RenfeSearchStepDefinitions.java
+                                    :27) <br>
                                 jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java
                                     :-2) <br>
                                 jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java
@@ -572,30 +551,15 @@
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                When I select origin "MADRID-PUERTA DE ATOCHA"
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
                                 And I select destination "BARCELONA-SANTS"
                             </span>
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
@@ -611,8 +575,10 @@
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                    <td width="100"><span class="nested-group-step">0.07s</span></td>
                 </tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
@@ -628,8 +594,10 @@
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
@@ -645,8 +613,10 @@
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
@@ -662,8 +632,10 @@
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.03s</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
@@ -679,6 +651,8 @@
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
                     <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
@@ -687,9 +661,9 @@
                     </td>
                     <tr>
                 <tr class="test-ERROR">
-                    <td colspan="2"></td>
+                    <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>8.76s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>40.33s</em></span></td>
                 </tr>
 
             </table>
